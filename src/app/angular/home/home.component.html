@@ -1,0 +1,34 @@
+<div class="angular-articles">
+  <div class="highlight-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro">
+                <img class="highlight-img" src="assets/images/technology/angular.png">
+                <h5> ANGULAR </h5>
+                <div class="total-count"> {{"total articles" | uppercase}} - {{ articleTotalCount }} </div>
+                <h6 class="training-title"> {{technologyName + " master class " | uppercase}} </h6>
+                <p class="training-msg">Join our upcoming online training!</p>               
+                <button class="btn af-button margin-top-0 training" role="button" routerLink=""> {{ "get a ticket" | uppercase }} </button>
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container article-list">
+    <div class="row">
+      <div class="col-md-12" *ngFor="let article of (articleList | articleFilter: searchList)">
+        <a class="angular-href" [routerLink]="['/angular', article.url]">
+          <div class="article-wrap">
+            <h4 class="">  {{ article.title}} </h4>
+            <p class=""> {{ article.description }} <span> Read More...</span></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  <pagination [boundaryLinks]="true" [totalItems]="totalCount.length" (pageChanged)="pageChanged($event)" 
+     previousText="&lsaquo;" nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+  </div>
+</div>

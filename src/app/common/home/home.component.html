@@ -1,0 +1,153 @@
+<div class="highlight-phone" *ngFor="let dashboardData of dashboardData">
+  <div class="highlight-container">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-md-7">
+          <div class="intro">
+            <h2> </h2>
+            <h5> <span class="af-code"> {{... </span> {{ dashboardData.description }} <span class="af-code"> ...}} </span> </h5>
+            <a class="btn af-button" role="button" routerLink="/articles"> Articles </a>
+            <a class="btn af-button training" role="button" routerLink="/articles"> Trainings </a>
+          </div>
+        </div>
+        <div class="col-sm-5 code-block">
+          <div class="d-none d-md-block iphone-mockup">
+              <ngx-prism [language]="language" [hooks] = "hooks" [code]="content" [interpolation]="interpolate">
+                    {{ dashboardData.code }}
+              </ngx-prism>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+  <div class="features-contributors">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="features-text">
+            <i class="fa fa-star"></i>
+            <h3>Become a contributor </h3>
+            <p class="features-subtitle">
+              Become part of a global community
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="features-text">
+            <i class="fa fa-share-alt"></i>
+            <h3>Expert Instructors</h3>
+            <p class="features-subtitle">
+              Learn from top-class specialists
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4">
+          <div class="features-text">
+            <i class="fa  fa-leaf"></i>
+            <h3>Gamified Experience</h3>
+            <p class="features-subtitle">
+              Learning is as easy as playing a game
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="features-boxed">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Technology we are in</h2>
+      </div>
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/technology/angular.png">
+            <p class="description"> ANGULAR </p>
+            
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/technology/typescript.png">
+            <p class="description">TYPESCRIPT</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/technology/node.png">
+            <p class="description"> NODE </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="features-boxed">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Online IDE we use </h2>
+      </div>
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/editor/stackblitz.png">
+            <p class="description"> StackBlitz </p>
+  
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/editor/codepen.png">
+            <p class="description">Codepen</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box technology-box">
+            <img src="assets/images/editor/jsfiddle.png">
+            <p class="description"> JSFiddle </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="testimonials-clean">
+    <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Testimonials</h2>
+          <p class="text-center"> Our reader love us! Read what they have to say below. </p>
+        </div>
+        <div class="row people">
+          <div class="col-md-6 col-lg-4 item" *ngFor="let testimonial of dashboardData.testimonials">
+            <div class="box">
+              <p class="description">{{ testimonial.written }}</p>
+            </div>
+            <div class="author">
+              <img class="rounded-circle" src="assets/images/angularfeed.png" />
+              <h5 class="name">{{ testimonial.name }}</h5>
+              <p class="title">{{ testimonial.designation }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div> -->
+  <div class="newsletter-subscribe">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Subscribe for our Newsletter</h2>
+      </div>
+      <form class="form-inline" (ngSubmit)="sendMail(form)" #form="ngForm" novalidate>
+        <div class="form-group">
+          <input class="form-control" type="email" name="email" placeholder="* Your Email" required [(ngModel)]="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+        </div>
+        <div class="form-group">
+          <button [disabled]="!form.valid" class="btn subscribe-button margin-top-0" type="submit">{{"Subscribe" | uppercase}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
