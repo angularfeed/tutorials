@@ -5,7 +5,7 @@
         <div class="col-md-7">
           <div class="intro">
             <h2> </h2>
-            <h5> <span class="af-code"> {{... </span> {{ dashboardData.description }} <span class="af-code"> ...}} </span> </h5>
+            <h5> <span class="af-code"> {{ </span> {{ dashboardData.description }} <span class="af-code"> }} </span> </h5>
             <a class="btn af-button" role="button" routerLink="/articles"> Articles </a>
             <a class="btn af-button training" role="button" routerLink="/articles"> Trainings </a>
           </div>
@@ -62,23 +62,10 @@
         <h2 class="text-center">Technology we are in</h2>
       </div>
       <div class="row justify-content-center features">
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-          <div class="box technology-box">
-            <img src="assets/images/technology/angular.png">
-            <p class="description"> ANGULAR </p>
-            
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-          <div class="box technology-box">
-            <img src="assets/images/technology/typescript.png">
-            <p class="description">TYPESCRIPT</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-          <div class="box technology-box">
-            <img src="assets/images/technology/node.png">
-            <p class="description"> NODE </p>
+        <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tech of ourTech" >
+          <div class="box technology-box" [routerLink]= "tech.name">
+            <img [src]="'assets/images/technology/'+ tech.name + '.png'">
+            <p class="description"> {{tech.name | uppercase}} </p>
           </div>
         </div>
       </div>
@@ -91,23 +78,10 @@
         <h2 class="text-center">Online IDE we use </h2>
       </div>
       <div class="row justify-content-center features">
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tool of onlineTool">
           <div class="box technology-box">
-            <img src="assets/images/editor/stackblitz.png">
-            <p class="description"> StackBlitz </p>
-  
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-          <div class="box technology-box">
-            <img src="assets/images/editor/codepen.png">
-            <p class="description">Codepen</p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-5 col-lg-4 item">
-          <div class="box technology-box">
-            <img src="assets/images/editor/jsfiddle.png">
-            <p class="description"> JSFiddle </p>
+            <img [src]="'assets/images/editor/' + tool.name + '.png'">
+            <p class="description"> {{tool.name | uppercase}} </p>
           </div>
         </div>
       </div>

@@ -4,6 +4,11 @@ import { NgModule } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
+
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { PaginationModule } from 'ngx-bootstrap';
 import { PrismModule } from '@ngx-prism/core';
@@ -24,6 +29,8 @@ import { TrainingComponent } from './training/training.component';
 import { TypescriptComponent } from './typescript/typescript.component';
 import { TsArticlesComponent } from './typescript/ts-articles/ts-articles.component';
 import { ContactComponent } from './contact/contact.component';
+import { FirebaseComponent } from './technology/firebase/firebase.component';
+import { ToHtmlPipe } from './pipes/to-html.pipe';
 
 @NgModule({
   declarations: [
@@ -39,6 +46,8 @@ import { ContactComponent } from './contact/contact.component';
     TypescriptComponent,
     TsArticlesComponent,
     ContactComponent,
+    FirebaseComponent,
+    ToHtmlPipe,
   ],
   imports: [
     BrowserModule,

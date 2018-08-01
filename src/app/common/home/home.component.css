@@ -190,6 +190,12 @@
 .code-block {
   margin-top: 10px;
 }
+ 
+.af-code {
+    color: var(--sub-brand);
+    font-weight: bold;
+    font-size: 25px;
+}
 
 .testimonials-clean {
   color:#313437;
@@ -285,9 +291,14 @@
   margin-top: -5px;
   height: 55px;
 }
-
+.technology-box {
+  cursor: pointer;
+}
+.technology-box:hover {
+  opacity: 0.7;
+  border: 2px solid #71bbb4;
+}
 .technology-box img {
-  width: 100px;
   height: 100px;
 }
 .intro .af-button.training {
@@ -377,7 +388,7 @@
     display: block;
     border: none;
     background: #ee4758;
-    background: linear-gradient(25deg,#50adad,#69bfb7 50%);
+    background: linear-gradient(25deg,#96201d,#eb5d75 50%);
 }
 
 .features-contributors .features-text {
@@ -410,7 +421,7 @@
     border-top: 1px solid #e5f0f0;
 }
 .subscribe-button {
-    background: linear-gradient(25deg,#50adad,#69bfb7 50%) !important;
+    background: linear-gradient(25deg,#af2f31,#ef697f 50%) !important;
     border: 0 !important;
     border-radius: 0;
 } 

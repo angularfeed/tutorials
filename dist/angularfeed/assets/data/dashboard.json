@@ -1,0 +1,12 @@
+[{
+    "description": "The AngularFeed platform will offer students and tech geeks the best angular courses, we also help in full stack software development with Node",
+    "code": "> npm install -g @angular/cli;\n > ng new project-name;\n > ng serve\n > ng build --prod --aot",
+    "testimonials": [
+        {
+            "name": "Chandra",
+            "designation": "Web Developer",
+            "profile-img": "",
+            "written": "AngularFeed is well covered angular resource. My team and my self are very happy after reading angularfeed material."
+        }
+    ]
+}]

@@ -23,20 +23,23 @@
   color:#fff;
 }
 
-.brand-name {
+.brand-one {
+  color: var(--sub-brand);
   padding-left: 5px;
   font-size: 26px;
 }
-.brand-logo {
-  color: #82cd37 !important;
+.brand-two {
+  color: var(--sub-sub-brand);
+  padding-left: 2px;
+  font-size: 26px;
 }
 
 .af-tabs li a {
   font-size: 14px;
-  color: #fff;
+  color: #3e4a53;
 }
 .af-tabs li a:hover {
-  color: var(--sub-sub-brand);
+  color: var(--sub-brand);
 }
 a.active {
    color: var(--sub-brand) !important; 

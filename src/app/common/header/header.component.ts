@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { staticData } from '../../../global/static';
 
 @Component({
   selector: 'app-header',
@@ -10,24 +11,7 @@ export class HeaderComponent implements OnInit {
 
   subMenu: boolean = false;
 
-  subMenuContent = [
-    { 
-      name: "angular",
-      link: "angular"
-    },
-    {
-      name: "typescript",
-      link: "typescript"
-    },
-    {
-      name: "node",
-      link: "node"
-    },
-    {
-      name: "contact",
-      link: "contact"
-    }
-  ]
+  menu = staticData.menu;
 
   constructor(private router: Router) { }
 

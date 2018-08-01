@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { ArticlesService } from '../../services/articles.service';
 import { PageChangedEvent } from 'ngx-bootstrap/pagination';
 import { PlatformLocation } from '@angular/common';
+
+import { ArticlesService } from '../../services/articles.service';
 
 @Component({
   selector: 'app-article-template',

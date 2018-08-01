@@ -16,9 +16,11 @@ const routes: Routes = [
       { path: 'angular/:id', component: ArticleTemplateComponent},
       { path: 'typescript', component: TypescriptComponent },
       { path: 'typescript/:id', component: TsArticlesComponent },
+      { path: 'firebase', component: TypescriptComponent },
+      { path: 'firebase/:id', component: TsArticlesComponent },
       { path: 'tranings', component: TrainingComponent},
       { path: 'contact', component: ContactComponent},
-      { path: '**', component: HomeComponent }
+      { path: '**', component: AngularFeedMainHomeComponent }
  ];
 
 @NgModule({

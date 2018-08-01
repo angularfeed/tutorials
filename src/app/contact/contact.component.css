@@ -54,7 +54,7 @@
 }
 
 .register-photo form .btn-primary {
-  background: linear-gradient(25deg,#50adad,#69bfb7 50%);
+  background: linear-gradient(25deg,#af2f31,#ef697f 50%) !important;
   border: none;
   border-radius: 0;
   padding: 11px;

@@ -1,0 +1,150 @@
+[
+    {
+        "title": "Quick start Angular development with Angular CLI",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "quick-start-angular-development-with-angular-cli",
+        "description":"Angular is a Single Page Client side JavaScript framework which mainly used Mobile First approach, but nowadays it is widely used to build web application. It is build and supported by Google and has large developer Community."
+    },
+    {
+        "title": "Preventing Cross-site Scripting attack in Angular",
+        "image": "awsnode.png",
+        "technology": "angular",
+        "url": "preventing-cross-site-scripting-attack-in-angular",
+        "description": "Cross-site Scripting attack is also known as XSS which allows attacker to inject client side scripts into web application viewed by other users. "
+
+    },
+    {
+        "title": "How to setup Angular application with Firebase",
+        "image": "node.js-vs-angularjs-blog.png",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Dependency Injection in Angular",
+        "image": "node.js-vs-angularjs-blog.png",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Routing in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Styling Angular components",
+        "image": "angularnodesetup.jpg",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "The difference between Annotations and Decorators",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "View Encapsulation in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Host and Visibility in Angular's Dependency Injection",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Forward references in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "node",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Understanding @Injectable in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Upgrading Angular apps using ngUpgrade",
+        "image": "angularnodesetup.jpg",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Multi Providers in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Taking advantage of Observables in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Understanding Zones in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Template-driven Forms in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "node",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Custom Validators in Angular",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Angular Change Detection",
+        "image": "angularnodesetup.jpg",
+        "technology": "react",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "How to prevent name collisions in Angular providers",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Angular Providers using Map Literals",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    },
+    {
+        "title": "Exploring Rx Operators: map",
+        "image": "angularnodesetup.jpg",
+        "technology": "angular",
+        "url": "",
+        "description": "Coming Soon"
+    }
+]

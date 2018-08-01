@@ -10,7 +10,7 @@
                 <div class="mainindex" *ngFor="let mainIndex of article.index">
                   <h6 *ngIf="mainIndex.title" [attr.id]="mainIndex.title.split(' ').join('_')"> {{ mainIndex.title }} </h6>
                   <div *ngFor="let subIndex of mainIndex.data">
-                    <p class="introduction"> {{ subIndex.introduction }} </p>
+                    <p class="introduction" [innerHTML]="subIndex.introduction"> </p>
                     <ngx-prism [language]="subIndex.code_type" [hooks]="hooks" [code]="content" [interpolation]="interpolate" *ngIf="subIndex.code_snippet">
                       {{ subIndex.code_snippet }}
                     </ngx-prism>
@@ -27,10 +27,6 @@
               <h6>  List of Articles </h6>
               <div class="articles" *ngFor="let articleList of articleLists">
                 <p>  <a [routerLink]="['/angular', articleList.url]" (click)="articleClick()">  {{ articleList.title }} </a></p>
-              </div>
-              <div class="pagination">
-                <pagination [boundaryLinks]="true" [totalItems]="totalCount.length" (pageChanged)="pageChanged($event)" previousText="&lsaquo;"
-                  nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
               </div>
           </div>
         </div>

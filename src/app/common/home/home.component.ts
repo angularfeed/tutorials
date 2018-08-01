@@ -3,6 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { NgForm } from '@angular/forms';
 import { Http } from '@angular/http';
 
+import { staticData } from '../../../global/static';
+
 import { DashboardService } from '../../services/dashboard.service';
 
 @Component({
@@ -16,6 +18,9 @@ export class AngularFeedMainHomeComponent implements OnInit {
   email: string = '';
   title: string = 'Angular Feed - The futue of technology is here.';
   url: string = 'https://angularfeed.com/server/subscriber-mail.php';
+
+  ourTech = staticData.technology;
+  onlineTool = staticData.tool;
 
   language = 'js';
   hooks = {
