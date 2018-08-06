@@ -1,0 +1,46 @@
+<div class="article-template-container container-height">
+  <div class="container article-tempalate">
+    <div class="row">
+      <div class="col-md-8 article-page" *ngFor="let article of articles">
+        <div class="title article-head">
+          <h4> {{ article.title }} </h4>
+          <p>
+            <span> Posted by </span>
+            <span> {{ article.postedBy }} </span>
+          </p>
+        </div>
+        <div class="title article-body">
+          <div class="mainindex" *ngFor="let mainIndex of article.index">
+            <h6 *ngIf="mainIndex.title" [attr.id]="mainIndex.title.split(' ').join('_')"> {{ mainIndex.title }} </h6>
+            <div *ngFor="let subIndex of mainIndex.data">
+              <p class="introduction"> {{ subIndex.introduction }} </p>
+              <ngx-prism [language]="subIndex.code_type" [hooks]="hooks" [code]="content" [interpolation]="interpolate" *ngIf="subIndex.code_snippet">
+                {{ subIndex.code_snippet }}
+              </ngx-prism>
+              <img class="intro-image" [src]="'assets/images/angular/' + subIndex.image" *ngIf="subIndex.image">
+              <iframe class="iframe" [src]="subIndex.stackblitz_url | safeUrl" *ngIf="subIndex.stackblitz_url"></iframe>
+            </div>
+          </div>
+        </div>
+        <disqus class="disqus" [identifier]="pageId" [url]="pageUrl"></disqus>
+      </div>
+
+      <div class="col-md-4" [hidden]="!pageShow">
+        <div class="list-of-articles  article-list">
+          <h6> List of Articles </h6>
+          <div class="articles" *ngFor="let articleList of articleLists">
+            <p>
+              <a [routerLink]="['/angular/articles', articleList.url]" (click)="articleClick()"> {{ articleList.title }} </a>
+            </p>
+          </div>
+        </div>
+        <div class="get-a-ticket intro">
+          <img class="highlight-img" [src]="'assets/images/technology/' + technologyName + '.png'">
+          <h6 class="training-title"> {{technologyName + " master class " | uppercase}} </h6>
+          <p class="training-msg">Join our upcoming online training!</p>
+          <button class="btn af-button margin-top-0 training" role="button" routerLink=""> {{ "get a ticket" | uppercase }} </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

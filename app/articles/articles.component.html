@@ -1,0 +1,27 @@
+<div class="angular-articles container-height">
+  <div class="highlight-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro">
+            <img class="highlight-img" [src]="'assets/images/technology/' + technologyName + '.png'">
+            <h5> {{technologyName | uppercase}} </h5>
+            <div class=""> Find our top Articles in below technologies </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features-boxed">
+    <div class="container">
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item" *ngFor="let tech of ourTech">
+          <div class="box technology-box" [routerLink]="'../' +tech.name">
+            <img [src]="'assets/images/technology/'+ tech.name + '.png'">
+            <p class="description"> {{tech.name | uppercase}} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
